@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Century Gothic";
+    background-image: url(https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/lines.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:black;
+    z-index: 99;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.nav__content {
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav .logo a {
+    padding-left: 0;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: palevioletred;
+    transition: 0.3s;
+}
+nav .logo a:hover {
+    color: white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    font-size: 1.5vw;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: bold;
+    color: palevioletred;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: white;
+    border-bottom-color: white;
+    color: white;
+}
+
+.home-section {
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    color: black;
+    font-size: 4vw;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.subheader {
+    font-size: 2vw;
+    font-weight: normal;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 9vh;
+    padding: 1vh 2vw;
+    font-size: 1.5vw;
+    color: black;
+    border: none;
+    border-radius: 0.5vw;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: black; 
+    color: palevioletred;
+}
+
+.profile-container {
+    position: absolute;
+    right: 10vw;
+    top: 60vh;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 31vw; 
+    height: 34vw;
+    border-radius: 10%; 
+    overflow: hidden; 
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%); 
+    border-radius: inherit; 
+}
+
+section {
+    padding: 2vh 5vw ;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+}
+
+.contact-section {
+    background-color: #d4d4d4;
+}
+
+.projects-section {
+    background-color: #c4c4c4;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    padding: 50px;
+    background-image: url(https://images.unsplash.com/photo-1595418917831-ef942bd9f9ec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-container {
+    max-width: 1200px;
+    width: 100%;
+    background:black;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.skill p {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    background-color:brown;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.skills-list,
+.hobbies-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li,
+.hobbies-list li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color:white;
+}
+
+.about-details p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.6;
+}
+
+.about-details strong {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+  /* PROJECTS SECTION */
+
+  .projects-section {
+    padding: 50px;
+    background-image:url(https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/lines.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.projects-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.project-card .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: palevioletred;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-card .project-link:hover {
+    background-color: darkred;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+  /* CONTACT */
+
+  .contact-section {
+    padding: 200px;
+    background-image: url(https://images.unsplash.com/photo-1595418917831-ef942bd9f9ec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-option {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-option a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-option i {
+    font-size: 3em;
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+
+.contact-option h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-option p {
+    font-size: 1em;
+    color: #666;
+}
+
+.contact-option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  /* FOOTER SECTION */
+  
+  footer {
+    width: 100%;
+    height: 10vh;
+    margin: 0 1rem;
+    background-color:white;
+    font-weight: bold;
+  }
+  
+  footer p {
+    text-align: center;
+    color: black;
+    padding: 5vh;
+    
+  }
